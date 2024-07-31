@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>戰略配備 | Helldivers2</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .active,
+    .imgdemo:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="float-left w-30">
+      <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></img></a>
+    </div>
+    <nav class="float-right w-70">
+      <div class="navitem">
+        <a href="./arms.html">武器裝甲</a>
+        <a href="./weapon.html">戰略配備</a>
+        <a href="./enemy-bug.html">知己知彼</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="w-100 vh text-center" style="background-image: url(./img/sand1.webp);height: auto;">
+      <p style="color: yellow;margin-top: 0;padding-top: 50px;">死亡從天而降</p>
+      <h1>戰略配備使用方式</h1>
+      <p>只需按下至少 三個 按鈕，超級地球的船艦就會派出武器、援兵和彈藥。</p>
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)">飛鷹戰略配備</span>
+        <span class="dot" onclick="currentSlide(2)">軌道戰略配備</span>
+        <span class="dot" onclick="currentSlide(3)">背包戰略配備</span>
+        <span class="dot" onclick="currentSlide(4)">支援武器</span>
+        <span class="dot" onclick="currentSlide(5)">防禦性戰略配備</span>
+      </div>
+
+      <!-- Slideshow container -->
+      <div class="">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides text-left">
+          <h3 style="margin: 20px 50px;">飛鷹戰略配備</h3>
+          <p style="margin: 20px 50px;">非常迅速、噪音很大卻也充滿樂趣。每個配備均有固定儲能次數，可快速連續使用。 </p>
+          <ul style="margin: 0px 50px;padding: 20px;">
+            <li style="padding: 15px;"><b>機槍掃射</b><br>呼叫高速戰鬥機，從空中發動機關槍襲擊。</li>
+            <li style="padding: 15px;"><b>空襲</b><br>地毯式轟炸突襲，絕對讓敵人猝不及防。</li>
+            <li style="padding: 15px;"><b>集束炸彈</b><br>發射一連串集束炸彈，摧毀戰場大片區域。</li>
+            <li style="padding: 15px;"><b>凝固汽油彈</b><br>準戰兵，請小心！彈藥產生的炙熱餘波將進行無差別攻擊，守護自由或捍衛暴政的士兵都無一倖免。</li>
+          </ul>
+        </div>
+        <div class="mySlides text-left">
+          <h3 style="margin: 20px 50px;">軌道戰略配備</h3>
+          <p style="margin: 20px 50px;">耐心等待，好運就會降臨。它們的部署時間可能較長，但軌道武器的威力無窮。 </p>
+          <ul style="margin: 0px 50px;padding: 20px;">
+            <li style="padding: 15px;"><b>精準攻擊</b><br>一擊必殺的奇蹟。放下信標，採取行動。一擊致命，正中要害。</li>
+            <li style="padding: 15px;"><b>格林機槍彈幕</b><br>戰艦上強大的格林機槍持續快速射擊。等著看好戲吧。</li>
+            <li style="padding: 15px;"><b>毒氣攻擊</b><br>屏住呼吸！自由的甜美氣息有時令人致命。</li>
+            <li style="padding: 15px;"><b>軌道電磁干擾打擊</b><br>呼叫電磁攻擊，原地擊暈敵方勢力（但也會擊暈戰友；請慎重部署）。</li>
+          </ul>
+        </div>
+        <div class="mySlides text-left">
+          <h3 style="margin: 20px 50px;">背包戰略配備</h3>
+          <p style="margin: 20px 50px;">有時運用頭腦思考比用扣動版機來得有效。 </p>
+          <ul style="margin: 0px 50px;padding: 20px;">
+            <li style="padding: 15px;"><b>補給背包</b><br>為同伴補充補給，有助於恢復戰力。</li>
+            <li style="padding: 15px;"><b>彈跳背包</b><br>高高躍向空中，繞過看似無法逾越的障礙或還沒發現您的敵人。</li>
+            <li style="padding: 15px;"><b>「護衛犬」</b><br>絕地戰兵最好的朋友？這台無人機有求必應，會用突擊步槍射擊附近的敵人。</li>
+            <li style="padding: 15px;"><b>「護衛犬」漫遊者</b><br>效果同上，但使用的是很酷的雷射武器！誰是乖狗狗？ </li>
+          </ul>
+        </div>
+        <div class="mySlides text-left">
+          <h3 style="margin: 20px 50px;">支援武器</h3>
+          <p style="margin: 20px 50px;">重點來了。重型火力將摧毀大群敵人或單一裝甲單位。 </p>
+          <ul style="margin: 0px 50px;padding: 20px;">
+            <li style="padding: 15px;"><b>機槍</b><br>噠噠噠。笨重卻火力十足。蹲下，扣動板機，抓緊掃射。</li>
+            <li style="padding: 15px;"><b>反器材步槍</b><br>這把威力強大的步槍可以證明：無需「那麼接近敵人」，也能百發百中。</li>
+            <li style="padding: 15px;"><b>盟友機槍</b><br>這把槍類似機關槍，更易於操作、更精準，且使用時不會太心累。</li>
+            <li style="padding: 15px;"><b>反坦克消耗品</b><br>線索就在名稱中 - 一次性的火箭發射器，可消滅敵人的裝甲部隊。</li>
+          </ul>
+        </div>
+        <div class="mySlides text-left">
+          <h3 style="margin: 20px 50px;">防禦性戰略配備</h3>
+          <p style="margin: 20px 50px;">如果要贏得勝利，就要想辦法活下來。將敵人拒於門外，堅守陣地。 </p>
+          <ul style="margin: 0px 50px;padding: 20px;">
+            <li style="padding: 15px;"><b>反步兵雷區</b><br>戰場上佈滿地雷，無論是朋友或敵人，踩到就會喪命。</li>
+            <li style="padding: 15px;"><b>燃燒地雷</b><br>觸發爆炸，點燃整片地面和附近任何膽敢靠近的目標。</li>
+            <li style="padding: 15px;"><b>哨戒機槍</b><br>可擊潰輕裝甲敵人的高射速砲塔。設置完成後您就能繼續去忙了。</li>
+            <li style="padding: 15px;"><b>哨戒格林炮</b><br>與哨戒機槍非常類似，但攻擊速度更快。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 vh text-center" style="background-image: url(./img/sand2.webp);">
+      <p style="color: yellow;margin: 0;padding-top: 50px;">擷取自PS5</p>
+      <h1 style="padding-bottom: 50px;">《HELLDIVERS 2》遊戲畫面</h1>
+      <div class="row">
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/1.webp" onclick="openModal();currentSlide(1)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/2.webp" onclick="openModal();currentSlide(2)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/3.webp" onclick="openModal();currentSlide(3)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/4.webp" onclick="openModal();currentSlide(4)"
+            class="hover-shadow" alt="">
+        </div>
+      </div>
+      <div class="row" style="padding-top: 15px;">
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/5.webp" onclick="openModal();currentSlide(5)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/6.webp" onclick="openModal();currentSlide(6)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/7.webp" onclick="openModal();currentSlide(7)"
+            class="hover-shadow" alt="">
+        </div>
+        <div class="column">
+          <img class="lightbox" src="./img/bimg/gallery/8.webp" onclick="openModal();currentSlide(8)"
+            class="hover-shadow" alt="">
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="imgSlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./img/bimg/gallery/1.webp" style="width:100%">
+          </div>
+
+          <div class="imgSlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./img/bimg/gallery/2.webp" style="width:100%">
+          </div>
+
+          <div class="imgSlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/bimg/gallery/3.webp" style="width:100%">
+          </div>
+
+          <div class="imgSlides">
+            <div class="numbertext">4 / 10</div>
+            <img src="./img/bimg/gallery/4.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">5 / 10</div>
+            <img src="./img/bimg/gallery/5.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">6 / 10</div>
+            <img src="./img/bimg/gallery/6.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">7 / 10</div>
+            <img src="./img/bimg/gallery/7.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">8 / 10</div>
+            <img src="./img/bimg/gallery/8.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">9 / 10</div>
+            <img src="./img/bimg/gallery/9.webp" style="width:100%">
+          </div>
+          <div class="imgSlides">
+            <div class="numbertext">10 / 10</div>
+            <img src="./img/bimg/gallery/10.webp" style="width:100%">
+          </div>
+
+          <a class="imgprev" onclick="imgplusSlides(-1)">&#10094;</a>
+          <a class="imgnext" onclick="imgplusSlides(1)">&#10095;</a>
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  </main>
+  <footer>
+    <div class="clearfix">
+      <p class="w-100 text-center" style="color: yellow;padding-top: 50px;">播送完畢</p>
+      <h2 class="w-100 text-center">超級地球真理部 贊助播出</h2>
+    </div>
+    <img class="footerimg" src="./img/footer.webp" alt="">
+  </footer>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+
+    // lightbox
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var imgslideIndex = 1;
+    imgshowSlides(imgslideIndex);
+
+    // Next/previous controls
+    function imgplusSlides(n) {
+      imgshowSlides(imgslideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function imgcurrentSlide(n) {
+      imgshowSlides(imgslideIndex = n);
+    }
+
+    function imgshowSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("imgSlides");
+      var dots = document.getElementsByClassName("imgdemo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) { imgslideIndex = 1 }
+      if (n < 1) { imgslideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[imgslideIndex - 1].style.display = "block";
+      dots[imgslideIndex - 1].className += " active";
+      captionText.innerHTML = dots[imgslideIndex - 1].alt;
+    }
+
+    // // Get the button:
+    // let mybutton = document.getElementById("myBtn");
+
+    // // When the user scrolls down 20px from the top of the document, show the button
+    // window.onscroll = function () { scrollFunction() };
+
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     mybutton.style.display = "block";
+    //   } else {
+    //     mybutton.style.display = "none";
+    //   }
+    // }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>

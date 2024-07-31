@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>武器裝甲 | Helldivers2</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    @media screen and (max-width: 1140px) {
+      div.w-50 {
+        /* display: none; */
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clearfix">
+    <div class="float-left w-30">
+      <a href="./index.html"><img class="logo" src="./img/logo.png" alt=""></img></a>
+    </div>
+    <nav class="float-right w-70">
+      <div class="navitem">
+        <a href="./arms.html">武器裝甲</a>
+        <a href="./weapon.html">戰略配備</a>
+        <a href="./enemy-bug.html">知己知彼</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="w-100 " style="background-image: url(./img/arm1.webp); background-size: cover;height: 600px;">
+      <div class="text-center">
+        <h1 style="margin-top: 0;padding-top: 10px;">銀河最後一道進攻線</h1>
+        <h4 class="w-60" style="padding-left: 20%;">超級地球周圍的星系遭到蟲族和機器肆虐。準戰兵，您的任務就是一次拯救一個星球，解放所有敵對星系。</h4>
+        <h4 class="w-60" style="padding-left: 20%;">
+          為了拯救這些星球，您得執行大量風險等級不同的行動。您將在許多小規模的戰鬥中證明自己的實力，藉此取得機會去解決更危險的任務，完成這些任務將帶給小隊更多豐厚獎勵。</h4>
+        <h4 class="w-60" style="padding-left: 20%;">每艘戰艦上的銀河地圖都會展示我們的軍事行動進度，唯有不斷解放星球和星系，我們才能讓銀河系重獲自由。</h4>
+      </div>
+    </div>
+
+    <div class="clearfix vh text-center"
+      style="background-image: url(./img/arm2.webp);height: auto;padding-bottom: 80px; background-size: cover;">
+      <p class="w-100" style="color: yellow;margin: 0;padding-top: 50px;">帥氣殺敵</p>
+      <h1 class="w-100">挑選武器和裝甲</h1>
+      <p class="w-100" style="color: lightgray;">武器成就不凡；請慎重選擇。</p>
+      <div id="div_D" class="w-50 float-left hideme">
+        <h2 style="padding-top: 20%;">正義之武器</h2>
+        <p style="color: lightgray; padding: 0% 20%;">無論是輕機槍、堅實的隨身武器、瘋狂的散彈槍，還是精準的戰鬥步槍，超級地球鼓勵您在伸張正義時自由發揮。
+          您所擁有的強大火力可以擊潰任何蟲族、機器人，或銀河系任何敵對物種與危機。主要槍枝、手槍、手榴彈屬性各異，特性也不同，因此請為每次任務選擇合適的機件。</p>
+      </div>
+      <div class="w-50 float-left">
+        <video id="video_D" class="hideme" autoplay muted loop
+          style="width: 700px;border-bottom: 2px solid yellow;margin-left: -12%;padding-top: 10%;"
+          src="./img/vid/vid1.mp4"></video>
+      </div>
+      <div class="w-50 float-left">
+        <video id="video_E" class="hideme" autoplay muted loop
+          style="width: 700px;border-bottom: 2px solid yellow;padding-top: 10%;margin-left: 5%;"
+          src="./img/vid/vid2.mp4"></video>
+      </div>
+      <div id="div_E" class="w-50 float-left hideme">
+        <h2 style="padding-top: 15%;">捍衛自由的裝甲</h2>
+        <p style="padding: 0% 20%;">銀河系前線危機四伏，因此在穿上超級地球最瀟灑的裝甲套組前，您絕對不會想踏入絕地噴射艙。各種款式，令人望之興嘆，還配有三種舒適的尺寸。</p>
+        <ul style="padding: 0% 20%;">
+          <li style="text-align: left;padding-top: 5px;"><b>輕甲</b>適用於靈巧且致命的絕地戰兵，能夠讓您比敵人搶先一步行動。</li>
+          <li style="text-align: left;padding-top: 5px;"><b>重甲</b>適合那些腳步沉穩，如棟樑般支撐民主的人，他們沒有擊敗暴政，絕不善罷甘休。</li>
+          <li style="text-align: left;padding-top: 5px;"><b>中甲</b>適合喜歡魚跟熊掌兼得且隨心所欲的積極進取者。</li>
+        </ul>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  </main>
+  <footer>
+    <div class="clearfix">
+      <p class="w-100 text-center" style="color: yellow;padding-top: 50px;">播送完畢</p>
+      <h2 class="w-100 text-center">超級地球真理部 贊助播出</h2>
+    </div>
+    <img class="footerimg" src="./img/footer.webp" alt="">
+  </footer>
+  <script>
+    window.onscroll = function () { scrollTime() };
+
+function scrollTime() {
+  let myItemdiv_A = document.getElementById('div_D');
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    myItemdiv_A.classList.add('fadein');
+  }
+  let myItemA = document.getElementById('video_D');
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    myItemA.classList.add('fadein');
+  }
+  let myItemdiv_B = document.getElementById('div_E');
+  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+    myItemdiv_B.classList.add('fadein');
+  }
+  let myItemB = document.getElementById('video_E');
+  if (document.body.scrollTop > 850 || document.documentElement.scrollTop > 850) {
+    myItemB.classList.add('fadein');
+  }
+}
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知己知彼 | 機器人 | Helldivers2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        main div a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 50rem;
+            padding: 10px;
+            font-size: large;
+            transition: all 300ms;
+            position: relative;
+            left: 45%;
+        }
+
+        main div a:hover {
+            background-color: white;
+            color: black;
+            box-shadow: 2px 2px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div class="float-left w-30">
+            <a href="./index.html"><img class="logo" src="./img/logo.png"></img></a>
+        </div>
+        <nav class="float-right w-70">
+            <div class="navitem">
+                <a href="./arms.html">武器裝甲</a>
+                <a href="./weapon.html">戰略配備</a>
+                <a href="./enemy-bug.html">知己知彼</a>
+            </div>
+        </nav>
+    </header>
+    <main class="bgp" style="background-image: url(./img/arm2.webp);height: auto;padding-bottom: 80px;  background-size: cover;">
+        <div style="text-align: center;">
+            <h6 style="color: yellow;margin-top: 0;padding-top: 30px;">對抗巨大威脅</h6>
+            <h1>知己知彼</h1>
+            <h5>面對現實吧，每顆星球上的一切都想要您的命。這就是絕地戰兵的日常。好好學習兇殘蟲族和邪惡機器人集團的知識吧。</h5>
+        </div>
+        <div>
+            <a href="./enemy-bug.html">蟲族</a>
+            <a style="background-color: white;color: black;" href="./enemy-robot.html">機器人</a>
+        </div>
+
+        <img class="mySlidesimg w-100" src="./img/robot/robot1.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot2.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot3.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot4.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot5.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot6.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot7.webp">
+        <img class="mySlidesimg w-100" src="./img/robot/robot8.webp">
+        <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="next" onclick="plusDivs(+1)">&#10095;</button>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides-t">
+                <h3>騎兵、襲擊者、掠奪者</h3>
+                <p>騎兵不過是有腳的槍，將意識熔入機關槍和火箭發射器的卑劣諷刺。與超級地球不同，機器人似乎相信將重型武器捆綁在可犧牲的炮灰上就能解決一切問題。</p>
+            </div>
+
+            <div class="mySlides-t">
+                <h3>部長</h3>
+                <p>粗糙的軍事領導模擬，部長以略微快速的處理運作和粗野的指揮子程式而提升。部長盡可能隔岸觀戰，可鄙懦弱的程度與毫不掩飾的無情不相上下。</p>
+            </div>
+
+            <div class="mySlides-t">
+                <h3>偵察闊步者</h3>
+                <p>偵察闊步者是由機器操作的機器，由機器人騎兵有限的智慧引導的行走砲塔。另一個模仿真實智慧的無用嘗試，在這個例子中，支配一個比他們自己更原始簡陋的機器。</p>
+            </div>
+            <div class="mySlides-t">
+                <h3>狂暴者</h3>
+                <p>原始野蠻的化身，狂暴者的每個鋸子都有CPU，程式設定只為了解決一個問題：盡可能快速縮短鋸子和目標之間的距離。</p>
+            </div>
+            <div class="mySlides-t">
+                <h3>破壞者</h3>
+                <p>裝甲破壞者企圖以各式各樣令人髮指的武器，碾碎機器人極權主義世界觀的敵人：手臂大砲、手臂盾牌、手臂機關槍和手臂火箭發射器。變體：手臂大砲（基座）、機關槍／重型、火箭。</p>
+            </div>
+            <div class="mySlides-t">
+                <h3>巨型者</h3>
+                <p>與所有機器人成員相同，蹣跚而行的巨型者已無腦最佳化設定為除了運送大型火力其他什麼也不做。如果遇到了，對於絕地戰兵的建議做法是立即呼叫可用的最大軌道砲擊。變體：機炮／火箭、火焰、火箭。</p>
+            </div>
+            <div class="mySlides-t">
+                <h3>坦克</h3>
+                <p>無恥複製超級地球坦克設計，機器人坦克在許多方面顯然都較為遜色，因此在此逐一列舉有點不切實際。變體：重型大砲、四座重機槍。</p>
+            </div>
+            <div class="mySlides-t">
+                <h3>空降艇</h3>
+                <p>滿載機器人步兵的空降挺，迅速執行盲目、機械化專制部署。</p>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </main>
+    <footer>
+        <div class="clearfix">
+            <p class="w-100 text-center" style="color: yellow;padding-top: 50px;">播送完畢</p>
+            <h2 class="w-100 text-center">超級地球真理部 贊助播出</h2>
+        </div>
+        <img class="footerimg" src="./img/footer.webp" alt="">
+    </footer>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlidesimg");
+            var slides = document.getElementsByClassName("mySlides-t");
+            var dots = document.getElementsByClassName("dot");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+</body>
+
+</html>
